@@ -19,7 +19,7 @@ For example, if n = 4 and k = 2, a solution is:
 
 ## Explain
 
-Below is a example when n = 5, and k = 3. Here we draw a tree diagram of the combination to show how to compose all combinations manually (_here we add 0 as the root is only for mathematical convenience_):
+Below is an example when n = 5, and k = 3. Here we draw a tree diagram of the combination to show how to compose all combinations manually (_here we add 0 as the root is only for mathematical convenience_):
 
 ![combination-tree](combination-tree.png)
 
@@ -35,30 +35,3 @@ If the depth of a leaf is k, the leaf and all its parents (without root node) be
 Such as the `0 -> 1 -> 2 -> 3` and `0 -> 1 -> 3 -> 5` are valid ones. `0 -> 3 -> 5` is not valid because the depth of leaf `5` is 2, not 3.
 
 Find all the valid combinations, and we will reach our final goal.
-
-## Sample Code
-
-```js
-/**
- * @param {number} n
- * @param {number} k
- * @return {number[][]}
- */
-var combine = function(n, k) {
-    return comb(0, [], n, k, []);
-};
-
-function comb (parent, path, n, k, result) {
-    // Return because we don't have to search further.
-    if (path.length === k) return result.push(path);
-
-    // Each child must greater than its parent.
-    // Each child mustn't greater than n.
-    // Here we traverse the tree from right to left.
-    for (var i = n; i >= parent + 1; i--) {
-        comb(i, path.concat(i), n, k, result);
-    }
-
-    return result;
-}
-```
