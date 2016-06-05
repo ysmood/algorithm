@@ -1,5 +1,7 @@
 ## Overview
 
+[![Build Status](https://travis-ci.org/ysmood/algorithm.svg)](https://travis-ci.org/ysmood/algorithm)
+
 Simple ways to understand some of the basic algorithms.
 
 Each folder explains one algorithm.
