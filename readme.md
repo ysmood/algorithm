@@ -1,1 +1,1 @@
-Simple ways to understanding some of the basic algorithms.
+Simple ways to understand some of the basic algorithms.

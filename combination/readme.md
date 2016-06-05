@@ -23,7 +23,7 @@ Below is a example when n = 5, and k = 3. Here we draw a tree diagram of the com
 
 ![combination-tree](combination-tree.png)
 
-The building process of this tree is actually a depth first search process.
+The building process of this tree is actually a DFS process.
 
 The search principles are pretty simple:
 
