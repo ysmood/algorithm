@@ -1,0 +1,27 @@
+{
+  "name": "algorithm",
+  "version": "1.0.0",
+  "description": "Simple ways to understand some of the basic algorithms.",
+  "main": "nofile.js",
+  "scripts": {
+    "no": "no",
+    "test": "no test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ysmood/algorithm.git"
+  },
+  "keywords": [
+    "algorithm"
+  ],
+  "author": "http://ysmood.org",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ysmood/algorithm/issues"
+  },
+  "homepage": "https://github.com/ysmood/algorithm#readme",
+  "devDependencies": {
+    "junit": "^1.4.2",
+    "nokit": "^0.20.12"
+  }
+}
