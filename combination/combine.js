@@ -3,7 +3,7 @@
  * @param {number} k
  * @return {number[][]}
  */
-var combine = function(n, k) {
+var combine = function (n, k) {
     return comb(0, [], n, k, []);
 };
 

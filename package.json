@@ -5,7 +5,7 @@
   "main": "nofile.js",
   "scripts": {
     "no": "no",
-    "test": "no test"
+    "test": "no lint test"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,43 @@
   },
   "homepage": "https://github.com/ysmood/algorithm#readme",
   "devDependencies": {
+    "eslint": "2.11.1",
     "junit": "1.4.4",
     "nokit": "0.20.12"
+  },
+  "eslintConfig": {
+    "rules": {
+      "indent": [
+        2,
+        4
+      ],
+      "linebreak-style": [
+        2,
+        "unix"
+      ],
+      "semi": [
+        2,
+        "always"
+      ],
+      "no-trailing-spaces": 2,
+      "space-before-function-paren": [
+        2,
+        "always"
+      ],
+      "eqeqeq": [
+        2,
+        "allow-null"
+      ],
+      "no-unused-vars": 0,
+      "no-console": [
+        0
+      ]
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "extends": "eslint:recommended"
   }
+
 }

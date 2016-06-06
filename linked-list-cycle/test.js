@@ -17,9 +17,9 @@ module.exports = test(__dirname + '/detectCycle.js', function (it, detectCycle) 
         var list = {
             val: 1,
             next: {
-                val: 2,
+                val: 2
             }
-        }
+        };
 
         list.next.next = list;
 
@@ -37,11 +37,11 @@ module.exports = test(__dirname + '/detectCycle.js', function (it, detectCycle) 
                 next: {
                     val: 3,
                     next: {
-                        val: 4,
+                        val: 4
                     }
                 }
             }
-        }
+        };
 
         list.next.next.next.next = list.next;
 

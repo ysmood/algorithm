@@ -6,4 +6,11 @@ module.exports = function (task, option) {
     task('test', 'unit test of the whole project', function (opts) {
         return kit.spawn('junit', ['-g', opts.grep, '*/test.js']);
     });
+
+    task('lint', 'lint code style', function () {
+        return kit.spawn('eslint', [
+            '--ignore-pattern', 'node_modules',
+            '**/*.js'
+        ]);
+    });
 };
