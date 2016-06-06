@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/ysmood/algorithm#readme",
   "devDependencies": {
-    "junit": "^1.4.2",
-    "nokit": "^0.20.12"
+    "junit": "1.4.4",
+    "nokit": "0.20.12"
   }
 }

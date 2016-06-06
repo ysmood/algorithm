@@ -1,7 +1,7 @@
 var test = require('../test');
 
 module.exports = test(__dirname + '/detectCycle.js', function (it, detectCycle) {
-    it(function () {
+    it('no cycle', function () {
         it.eq(
             detectCycle({
                 val: 1,
@@ -13,7 +13,7 @@ module.exports = test(__dirname + '/detectCycle.js', function (it, detectCycle) 
         );
     });
 
-    it(function () {
+    it('tail to root', function () {
         var list = {
             val: 1,
             next: {

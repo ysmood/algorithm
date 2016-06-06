@@ -17,3 +17,7 @@ Each folder will contain a `test.js` file for unit tests.
 ## Run Unit Tests
 
 `npm test`
+
+To filter specific tests:
+
+`npm test -- --grep 'combine'`

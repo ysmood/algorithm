@@ -9,6 +9,8 @@ module.exports = function (path, fn) {
     script.runInNewContext(ctx);
 
     return function (it) {
-        fn(it, ctx[fnName]);
+        return it.describe(fnName, function (it) {
+            return fn(it, ctx[fnName]);
+        });
     };
 };
