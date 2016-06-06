@@ -1,7 +1,7 @@
 {
   "name": "algorithm",
   "version": "1.0.0",
-  "description": "Simple ways to understand some of the basic algorithms.",
+  "description": "Simple code to learn and understand some of the basic algorithms.",
   "main": "nofile.js",
   "scripts": {
     "no": "no",
