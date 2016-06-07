@@ -38,3 +38,5 @@ var detectCycle = function (head) {
 
     return slow;
 };
+
+module.exports = detectCycle;

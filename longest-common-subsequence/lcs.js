@@ -137,3 +137,5 @@ function PrintlcsTable (table) {
 
     console.log(str);
 }
+
+module.exports = lcs;
