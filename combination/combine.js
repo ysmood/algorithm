@@ -24,25 +24,4 @@ function comb (parent, path, n, k, result) {
     return result;
 }
 
-var done = false;
-var count = 0;
-var result;
-function permute (path, n, k) {
-    if (done) return;
-
-    if (path.length === n) {
-        if (++count === k) {
-            result = path;
-            done = true;
-        }
-        return;
-    }
-
-    for (var i = 1; i <= n; i++) {
-        if (path.indexOf(i) > -1) continue;
-
-        permute(path + i, n, k);
-    }
-}
-
 module.exports = combine;
