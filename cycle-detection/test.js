@@ -3,7 +3,7 @@ var detectCycle = require('./detectCycle');
 module.exports = function (it) {
     it.describe('detectCycle', function (it) {
         it('no cycle', function () {
-            it.eq(
+            return it.eq(
                 detectCycle({
                     val: 1,
                     next: {
@@ -24,7 +24,7 @@ module.exports = function (it) {
 
             list.next.next = list;
 
-            it.eq(
+            return it.eq(
                 detectCycle(list) === list,
                 true
             );
@@ -46,7 +46,7 @@ module.exports = function (it) {
 
             list.next.next.next.next = list.next;
 
-            it.eq(
+            return it.eq(
                 detectCycle(list) === list.next,
                 true
             );
