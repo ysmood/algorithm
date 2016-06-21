@@ -1,4 +1,4 @@
-var lcs = require('./lcs');
+var lcs = require('./lcs-fast');
 
 module.exports = function (it) {
     it.describe('lcs', function (it) {
